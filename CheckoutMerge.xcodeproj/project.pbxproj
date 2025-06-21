@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		6FB464062E074ED7000018B9 /* ArgumentParser in Frameworks */ = {isa = PBXBuildFile; productRef = 6FB464052E074ED7000018B9 /* ArgumentParser */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXCopyFilesBuildPhase section */
 		6FB463F82E074EA8000018B9 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
@@ -35,6 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6FB464062E074ED7000018B9 /* ArgumentParser in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +82,7 @@
 			);
 			name = CheckoutMerge;
 			packageProductDependencies = (
+				6FB464052E074ED7000018B9 /* ArgumentParser */,
 			);
 			productName = CheckoutMerge;
 			productReference = 6FB463FA2E074EA8000018B9 /* CheckoutMerge */;
@@ -106,6 +112,9 @@
 			);
 			mainGroup = 6FB463F12E074EA8000018B9;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				6FB464042E074ED7000018B9 /* XCRemoteSwiftPackageReference "swift-argument-parser" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 6FB463FB2E074EA8000018B9 /* Products */;
 			projectDirPath = "";
@@ -253,6 +262,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7GB6QBV2B7;
 				ENABLE_HARDENED_RUNTIME = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
@@ -264,6 +274,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7GB6QBV2B7;
 				ENABLE_HARDENED_RUNTIME = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
@@ -291,6 +302,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		6FB464042E074ED7000018B9 /* XCRemoteSwiftPackageReference "swift-argument-parser" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-argument-parser.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.5.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		6FB464052E074ED7000018B9 /* ArgumentParser */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6FB464042E074ED7000018B9 /* XCRemoteSwiftPackageReference "swift-argument-parser" */;
+			productName = ArgumentParser;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 6FB463F22E074EA8000018B9 /* Project object */;
 }
